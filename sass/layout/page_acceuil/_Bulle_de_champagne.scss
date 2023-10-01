@@ -1,0 +1,58 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    font-family:consolas;
+}
+#section_bulle{
+    position: relative;
+    width:100%;
+    height: 100vh;
+   
+    overflow: hidden;
+background: $Fond_page_acceuil;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+#section_bulle h2
+{
+    font-size: 10em;
+    color:#830e0e;
+}
+#section_bulle span{
+    position: absolute;
+    bottom: 50px;
+    
+    background: transparent;
+border-radius: 50% ;
+border-color:5px #830e0e;
+pointer-events: none;
+box-shadow:inset 1 1 10px rgba(228,196,76,0.8);
+  animation:animate 100s linear infinite;
+}
+
+#section_bulle span:before{
+    content: '';
+    position:absolute;
+    width:100%;
+    height:100%;
+    
+    transform:scale(0.25) translate(-70%,-70%);
+    background: radial-gradient(#e5e921,transparent);
+    border-radius: 50%;
+    
+     
+}
+@keyframes animate
+{
+0%{
+    transform:translateY(200%);
+
+}
+100%{
+    transform:translatey(-7200%);
+    opacity:1;
+}
+
+}

@@ -1,0 +1,34 @@
+ 
+@import "./utils/variables" ; 
+@import "./pages/body";
+@import "./pages/bulle";
+@import "./pages/nounderline";
+@import "./base/police";
+
+@import "./utils/acceuil/animation_coeur";
+@import "./utils/chapitre/animation_chapitre";
+@import "./utils/chapitre/animation_footer_chapitre";
+@import "./utils/Lampe/lampe";
+@import "./layout/page_acceuil/Banniere_description";
+@import "./layout/page_acceuil/Classement";
+@import "./layout/page_acceuil/bas_de_page_acceuil";
+@import "./layout/page_acceuil/Bulle_de_champagne";
+
+@import "./layout/sommaire/sommaire";
+@import "./layout/sommaire/annexe2";
+@import "./layout/martine_a_lecole/ecole";
+@import "./layout/Annexe/annexe_Hospice";
+@import "./pages/body"; 
+//@import "./layout/voix/_style_voix";
+@import "./utils/peur/vibration";
+@import "./utils/Rotation/animation_rotation";
+@import "./utils/Rotation/coeur";
+@import "./utils/medaillon/medaillon";
+@import "./utils/pendule/pendule";
+@import "./utils/diplome/diplome";
+@import "./utils/variables";
+@import "./utils/Bilan_carrière/animation_script_bilan";
+@import "./utils//Bilan_carrière/animation_script_bilan_retraite"; 
+
+@import "./utils/commande_vocale/cmd_vocale";
+@import "./utils/Préambule/Animation_script";

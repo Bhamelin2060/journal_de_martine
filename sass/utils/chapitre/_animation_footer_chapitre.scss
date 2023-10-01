@@ -1,0 +1,11 @@
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(10%,0,0);      /* position initiale à droite */
+    
+  }
+  100% {
+    
+    
+    transform: translate3d(-100%,0,0) ;  /* position finale à gauche */
+  }
+}

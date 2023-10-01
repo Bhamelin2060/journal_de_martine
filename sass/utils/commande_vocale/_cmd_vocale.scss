@@ -1,0 +1,102 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#Synthese_Vocale{
+  display:flex;
+  flex-direction: column;
+   
+   
+  border-radius: 15px;
+  
+ }
+ 
+#reglage{
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+ }
+#curseur{
+ display:flex;
+flex-direction:column;
+justify-content: space-around;
+background-color: aquamarine;
+display:none;
+
+ }
+ 
+ .text-light{
+  font-size: 10px;
+  text-align: center;
+ }
+ .text-light.lead{
+  text-align: left;
+ }
+ .btn_close{
+ background-color: blue;
+ color:white;
+ }
+ #voices{
+  width:80%
+ }
+ #form-select{
+  width:80%
+ }
+ option{
+  width:40%
+ }
+ .lead{
+  font-size: 10px;
+ }
+ .btn{
+  
+ width:40px;
+ height:40px;
+ border-radius: 5px;
+ text-align: center;
+ background-color: rgb(98, 122, 122);
+ font-size:20px;
+ margin: 3px;
+ 
+ padding: 1px;
+ border:none;
+ 
+ }
+ .reg{
+  background-color: rgb(50, 109, 16);
+  color:white;
+ }
+ .close{
+  background-color: rgb(146, 18, 39);
+  color:white;
+ }
+ .mb-5{
+  display:flex;
+  justify-content:space-around;
+  border-radius: 15px;
+   
+ 
+}
+/*.start{
+   background-color: rgb(191,201,201); 
+
+}*/
+#Parole{
+  
+  position:absolue;
+  top:-20px;
+  left:-500px;
+  width:200px;
+  display:none;
+  align-items: center;
+}
+
+#haut_parleur{
+  display:flex;
+  align-items: center;
+}
+ 

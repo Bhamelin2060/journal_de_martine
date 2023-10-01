@@ -1,0 +1,11 @@
+{
+  "name": "journal_martine",
+  "version": "1.0.0",
+  "description": "Journal de martine",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "bruno",
+  "license": "ISC"
+}

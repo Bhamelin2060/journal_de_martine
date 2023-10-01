@@ -1,0 +1,588 @@
+@charset "UTF-8";
+/*durée de l'animation spinner ouverture page acceuil */
+/* Délai du retart de l'animation spinner */
+/* durée du spinner */
+body { /*desktop*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-around;
+  background-attachment: fixed;
+  border: 2px, green;
+  width: 996px;
+  /*height:1200px;*/
+}
+
+
+
+.Couverture_int {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  height: 98%;
+  margin: 1%, 1%, 1%, 10%;
+  border: 10px solid rgb(113, 59, 214);
+}
+
+.Couverture_ext {
+  display: flex;
+  height: 1200px;
+  flex-wrap: wrap;
+  border: 12px solid rgb(15, 148, 97);
+  padding: 10px;
+  margin: 5%;
+  text-align: center;
+  background-image: url(../images/texture-paper.png);
+}
+
+.Titre_martine_gros {
+  font-size: 70px;
+  margin: 10px;
+}
+
+.Titre_martine_petit {
+  font-size: 20px;
+}
+
+.Couverture_int_image {
+  width: 100%;
+  height: 120%;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-family: VagRounded;
+  color: deeppink;
+}
+
+h2 {
+  font-family: VagRounded;
+  color: deeppink;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  height: 10%;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(151, 144, 168);
+}
+footer p {
+  font-size: 30px;
+  font-family: vagRounded_bold;
+}
+
+p {
+  font-family: VAGRounded_Bold;
+  color: black;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.banniere_image {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.ascenseur {
+  overflow: auto;
+  text-align: justify;
+}
+
+.colonne2 {
+  display: flex;
+  flex-direction: row;
+}
+.colonne2 p {
+  text-align: justify;
+  font-family: VagRounded;
+}
+
+.boite_annexe {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  width: 25%;
+  height: 40px;
+  border: 2px solid rgb(15, 148, 97);
+  background-color: beige;
+  align-items: center;
+}
+
+.Bouton1 {
+  background: linear-gradient(180deg, #9356DC, #FF79DA 35%, #8f2e8f 100%);
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 5px 5px 10px #cccccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.Bouton1:hover {
+  background: linear-gradient(0deg, #9356DC, #FF79DA 35%, #8f2e8f 100%);
+}
+.Bouton1:active {
+  /*transform:scale(0.5);*/
+  transition: transform 50ms ease-in-out;
+  transform: scale(0.9);
+  box-shadow: 20px 10px 20px rgba(191, 192, 191, 0.8823529412);
+  background: linear-gradient(10deg, #30df79 0%, #30df79 35%, #30df79 100%);
+  background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
+}
+
+.nounderline:link {
+  text-decoration: none; /* interdit le soulignement d'un texte dans une structure de lien des hébergements */
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.otf") format("OPENtype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../polices/Roboto-Bold.ttf") format("TrueYype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../polices/Roboto-Regular.ttf") format("TrueYype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../polices/Roboto-Regular.ttf") format("TrueYype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VAGRounded";
+  src: url("../polices/VAGRoundedBT-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "VAGRounded_Bold";
+  src: url("../polices/VAG Rounded Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cac_champagne";
+  src: url("../polices/cac_champagne-webfont.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+.Banniere_description {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 15px;
+  width: 100%;
+}
+.Banniere_description h1 {
+  font-family: VagRounded;
+  color: deeppink;
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+}
+.Banniere_description p {
+  font-size: 15px; /* Changement de la taille des fonte en mode smartphones passe de 8 à 16 */
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.Classement {
+  /* ------------------- Container coup de coeur ----------------------*/
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-size: 35px;
+  padding-right: 40px;
+  margin-top: 20px;
+  width: 24px;
+  background: none;
+  cursor: pointer;
+}
+.Classement:hover .dessus {
+  transition: color 0.5s ease;
+  color: transparent;
+}
+.Classement:hover .dessous {
+  transition: opacity 0.5s;
+  z-index: 1;
+  opacity: 1;
+  scale: 2;
+}
+
+.dessus {
+  position: absolute;
+  top: 0;
+  transition: opacity 0.5s;
+  opacity: 1;
+  color: black;
+}
+
+.dessous {
+  position: absolute;
+  transition: opacity 0.5s;
+  top: 0;
+  background: linear-gradient(217deg, #9356DC, #FF79DA 70.71%), linear-gradient(127deg, #9356DC, #FF79DA 70.71%), linear-gradient(336deg, #FF79DA, #99E2D0 80.71%);
+  Background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+
+.Entete {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin: 10px;
+  flex-direction: row;
+  align-items: center;
+  color: deeppink;
+}
+.Entete i {
+  font-size: 70px;
+  margin-right: 10px;
+}
+.Entete h1 {
+  font-family: VagRounded;
+  font-size: 50px;
+}
+.Entete .gauche {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+._sommaire {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: VagRounded;
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  font-size: 30px;
+  justify-content: space-around;
+  width: 100%;
+} /* Fin css sommaire */
+.site-navigation {
+  text-decoration-line: none;
+}
+
+.Centre {
+  width: 100%;
+}
+
+.Banniere_Image { /*  Banniere image hotel 1 */
+  height: 200px;
+  width: 100%;
+  /*border:1px rgb(226, 33, 49) solid; */
+  margin-bottom: 0px;
+  border-radius: 10px 10px 1px 1px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Chapitre {
+  /*    border:1px rgb(206, 137, 35) solid; */
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: deeppink;
+  box-shadow: 3px 3px 10px rgb(38, 9, 168);
+}
+.Chapitre:hover {
+  background: linear-gradient(0deg, #9356DC, #FF79DA 35%, rgb(143, 46, 143) 100%);
+}
+.Chapitre:hover h3 {
+  color: yellow;
+}
+.Chapitre:active {
+  /*transform:scale(0.5);*/
+  transition: transform 50ms ease-in-out;
+  transform: scale(0.9);
+  box-shadow: 20px 10px 20px rgba(191, 192, 191, 0.8823529412);
+}
+
+.Entete {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin: 10px;
+  flex-direction: row;
+  align-items: center;
+  color: deeppink;
+}
+.Entete i {
+  font-size: 70px;
+  margin-right: 10px;
+}
+.Entete h1 {
+  font-family: VagRounded;
+  font-size: 50px;
+}
+.Entete .gauche {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+._annexe2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: VagRounded;
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  font-size: 30px;
+  justify-content: space-around;
+  width: 100%;
+} /* Fin css sommaire */
+.site-navigation {
+  text-decoration-line: none;
+}
+
+.Centre {
+  width: 100%;
+}
+
+.Banniere_Image { /*  Banniere image hotel 1 */
+  height: 200px;
+  width: 100%;
+  /*border:1px rgb(226, 33, 49) solid; */
+  margin-bottom: 0px;
+  border-radius: 10px 10px 1px 1px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Chapitre {
+  /*    border:1px rgb(206, 137, 35) solid; */
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: deeppink;
+  box-shadow: 3px 3px 10px rgb(38, 9, 168);
+}
+.Chapitre h3 {
+  font-size: 20px;
+}
+.Chapitre:hover {
+  background: linear-gradient(0deg, #9356DC, #FF79DA 35%, rgb(143, 46, 143) 100%);
+}
+.Chapitre:hover h3 {
+  color: yellow;
+}
+.Chapitre:active {
+  /*transform:scale(0.5);*/
+  transition: transform 50ms ease-in-out;
+  transform: scale(0.9);
+  box-shadow: 20px 10px 20px rgba(191, 192, 191, 0.8823529412);
+}
+
+.page {
+  /*max-height:80%;
+  overflow: auto;*/
+  border-radius: 20px;
+  margin: 15px;
+  padding: 3%;
+  height: -moz-max-content;
+  height: max-content;
+  background-image: url("/images/neige.png");
+  background-attachment: fixed; /* Le fond restera fixe */
+}
+.page p {
+  font-size: 35px; /* Paragraphes de 14 pixels */
+  text-align: justify;
+  align-items: flex-start;
+  color: rgb(157, 35, 194);
+  font-size: 20px;
+  font-family: VAGRounded;
+  text-decoration: none;
+  margin-bottom: 0px;
+  overflow: auto;
+}
+.page p bold {
+  font-weight: bolder;
+}
+.page ul {
+  font-size: 20px; /* Paragraphes de 14 pixels */
+  text-align: left;
+  width: 60%;
+  align-items: flex-start;
+  color: rgb(157, 35, 194);
+  font-family: VAGRounded;
+  text-decoration: none;
+  margin-bottom: 0px;
+  overflow: auto;
+  max-height: 300px;
+}
+.page ul bold {
+  font-weight: bolder;
+}
+.page h2 {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.Titre_martine_gros {
+  font-family: VAGRounded_Bold;
+  color: deeppink;
+  font-size: 70px;
+}
+
+.Titre_martine_petit {
+  font-family: VAGRounded_Bold;
+  color: deeppink;
+  font-size: 20px;
+}
+
+.gauche {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gauche i {
+  font-size: 40px;
+  margin-left: 40px;
+  width: 50%;
+}
+.gauche.transparent {
+  opacity: 0;
+}
+
+.droite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+}
+.droite i {
+  font-size: 40px;
+  margin-right: 40px;
+  width: 50%;
+}
+.droite.transparent {
+  opacity: 0;
+}
+
+.ombre {
+  box-shadow: 5px, 5px, 10px, 10px, rgb(75, 75, 78);
+}
+
+.mon_histoire {
+  display:flex;
+  text-align: justify;
+  
+  font-family: VagRounded;
+  /*min-height: 8%; 
+
+  /*margin:2%; */
+  overflow: auto;
+
+}
+.mon_histoire h1 {
+  font-family: VagRounded;
+  font-size: 30px;
+}
+.mon_histoire h2 {
+  font-family: VagRounded;
+  font-size: 20px;
+}
+.mon_histoire p {
+  font-family: VAGRounded_Bold;
+  color: black;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+}
+.mon_histoire p :hover {
+  color: rgb(161, 11, 36);
+  pointer-events: visible;
+}
+.mon_histoire h3 {
+  font-family: VagRounded;
+  font-size: 10px;
+}
+
+.Justifie {
+  text-align: justify;
+}
+
+em {
+  font-style: italic;
+  COLOR: black;
+}
+
+.lien {
+  text-decoration: none;
+}
+.lien :hover {
+  color: rgb(206, 12, 28);
+  pointer-events: visible;
+}
+
+.fond_historique {
+  /*max-height:80%;
+  overflow: auto;*/
+  border-radius: 20px;
+  margin: 15px;
+  padding: 3%;
+  height: 100%; /*max-content;*/
+  background: url("/images/Hopital/tiffany.png") fixed no-repeat top left, url("/images/neige.png") fixed;
+  background-attachment: fixed; /* Le fond restera fixe */
+}
+.fond_historique li {
+  text-align: justify;
+  justify-content: left;
+  font-family: Verdana;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,73 @@
+#conteneur {
+	width: 18rem;
+	margin: auto;
+	}
+#pendule_diplome {
+    display:flex;
+    padding-top: 50px;  
+	position: relative;
+	margin: 0 auto;
+	width: 100px;
+    
+	 transform-origin: 50% 0px; 
+	&:hover{   
+        animation:5s infinite pendule ;  
+} 
+	}
+
+	#fil_diplome_G {
+	position: relative;
+	left: 12px;
+	top:2px;
+	rotate:60deg;
+	width:  2px;
+	height: 55px;
+	background: black;
+	}
+	#fil_diplome_D {
+		position: relative;
+		left: 56px;
+		top:2px;
+		rotate:-60deg;
+		width:  2px;
+		height: 55px;
+		background: black;
+		}
+#boule_diplome {
+	position: relative; 
+    left: -13px;
+    top:40px;
+	width: 180px;
+	height:90px;
+	/*background-image : radial-gradient(white, grey);*/
+     background-image: url(../images/Hopital/diplome.png); 
+     background-position: center; /* Center the image */
+   /* background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+	border: 1px;
+	 
+    border:solid 2px rgb(199, 13, 84);
+    /* ajout pour le cas de l'image*/
+    
+	}
+
+/*    Reste maintenant à créer l’animation : ajoutez dans le code CSS du pendule les définitions pour l’animation, puis définissez celle-ci :*/
+  
+ @keyframes pendule_diplome {
+    
+
+from { transform: rotate(15deg) ;}
+5%  { transform: rotate(0deg); }
+10%  { transform: rotate(-14deg); }
+20%  { transform: rotate(12deg); }
+30%  { transform: rotate(-11deg); }
+40%  { transform: rotate(10deg); }
+50%  { transform: rotate(-8deg); }
+60%  { transform: rotate(7deg); }
+70%  { transform: rotate(-6deg); }
+80%  { transform: rotate(4deg); }
+90%  { transform: rotate(-3deg); } 
+to   { transform: rotate(0deg);}
+
+
+} 

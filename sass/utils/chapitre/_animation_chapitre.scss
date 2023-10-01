@@ -1,0 +1,7 @@
+@mixin Animation_chapitre 
+{
+  transition:transform 50ms ease-in-out;
+  transform:scale(0.9);
+  box-shadow: 20px 10px 20px #bfc0bfe1;
+  animation-duration: 10s; 
+}

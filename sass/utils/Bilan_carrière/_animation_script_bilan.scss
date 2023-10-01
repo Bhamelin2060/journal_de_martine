@@ -1,0 +1,43 @@
+.loading_script_bilan{
+   position:relative;
+   left:10%;
+   width:80%; 
+   top:150%;
+   height:150%;
+   /*background-color: rgba(255, 255, 255, 1.0);
+   border-radius: 5%; */
+    
+   justify-content: center;
+   align-items:center;
+   
+   
+   
+ /*  animation:apparence $Temps_animation_acceuil; */
+     
+   animation-name: balayage;
+   animation-duration: $Temps_balayage_bilan;
+  
+ }
+ 
+ @keyframes balayage{
+
+   0% {
+    opacity: 1; 
+    top:100%;
+   }
+ 10%{
+  opacity: 1; 
+ }
+ 
+ 90%{
+  opacity: 0.1; 
+   
+ }
+  100%{
+    opacity: 0.0; 
+    top:-200%;
+  }
+ }
+ 
+   
+  

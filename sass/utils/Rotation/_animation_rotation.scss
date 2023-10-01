@@ -1,0 +1,48 @@
+@keyframes rotation {
+    from {
+        transform: rotate(10deg)translate(-21px);
+        animation-timing-function:ease-out;
+    }
+    10% {
+        transform: rotate(30deg)translate(-69px);
+        animation-timing-function:linear;
+    }
+    20% {
+        transform: rotate(45deg)translate(-120px);
+        animation-timing-function: linear;
+    }
+    30% {
+        transform: rotate(30deg)translate(-69px);
+        animation-timing-function: linear;
+    }
+
+    40% {
+        transform: rotate(10deg) translate(-21px);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: rotate( 0deg) translate(0px);
+        animation-timing-function: linear;
+    }
+    60%{
+        transform: rotate(-10deg)translate(21px);
+        animation-timing-function:linear;
+    }
+    70% {
+        transform: rotate(-30deg)translate(69px);
+        animation-timing-function: linear;
+    }
+    80% {
+        transform: rotate(-45deg)translate(120px);
+        animation-timing-function: linear;
+    }
+    90% {
+        transform: rotate(-30deg)translate(69px);
+        animation-timing-function:linear;
+    }
+    to {
+        transform: rotate(-10deg)translate(21px);
+        animation-timing-function:linear;
+    }
+    
+}

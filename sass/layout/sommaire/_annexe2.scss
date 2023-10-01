@@ -1,0 +1,65 @@
+
+  
+  .site-navigation{
+      text-decoration-line:none;
+  }
+  .Centre{
+        width:100%  
+  }
+  
+  
+  .Banniere_Image{                                /*  Banniere image hotel 1 */
+      height:200px; 
+      /* width:100%; 
+     border:1px rgb(226, 33, 49) solid; */
+      margin-bottom: 0px;
+      border-radius:10px 10px 1px 1px;
+      object-fit: cover;
+      
+  }
+   
+  .lien_histoire{
+     
+
+    /*position:absolute;
+    top:250px;
+    left:0px;*/
+    height:880px; 
+    width:900px; 
+     justify-content:space-around; 
+    display:none; 
+     
+    }
+  .Bouton2 {
+    /* position:absolute;
+    top:180px;
+    left:1500px; */
+    display:none;
+    background:linear-gradient(180deg, #9356DC, #FF79DA 35%, #8f2e8f 100%);
+  height: 50px;
+  width: 150px;
+  text-align: center; 
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 5px 5px 10px #cccccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+&:hover {
+  background: linear-gradient(0deg, #26c04c, #FF79DA 35%, #8f2e8f 100%);
+}
+&:active {
+  /*transform:scale(0.5);*/
+  transition: transform 50ms ease-in-out;
+  transform: scale(0.9);
+  box-shadow: 20px 10px 20px #bfc0bfe1;
+  background: linear-gradient(10deg, #30df79 0%, #30df79 35%, #30df79 100%);
+  background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
+}
+}

@@ -1,0 +1,138 @@
+.Entete {
+  display: flex;
+  
+  justify-content:flex-start;
+  width: 100%;
+ /* margin-top: 5%;
+  margin-bottom: 5%;*/
+  overflow:hidden;
+  
+  flex-direction: row;
+  align-items:center;
+  color: deeppink;
+  
+  & i{
+    font-size: 70px;
+    margin-right: 10px;
+    }
+  & h1{
+    display: flex;
+    font-family: VagRounded;
+    margin-left:5%; 
+    align-items: center;
+    font-size: $Font_size_h1_normal;
+   
+   }
+  .gauche{
+    display:flex;
+    justify-content:flex-start;
+    /*margin-right: 5%;*/
+  } 
+  .element:nth-child(1)
+{
+    flex: 2;
+}
+.element:nth-child(2)
+{
+    flex: 1;
+}
+
+  }   
+  .center{
+   display:flex;
+   align-items:center;
+   text-align: center;
+   width:200%; 
+   } 
+  ._sommaire{
+    display:flex;
+    flex-wrap: wrap;
+    font-family: VagRounded;
+    padding: 5px 10px 5px 10px;
+    margin: 30px;
+    font-size: 30px;
+    height:800px;
+     justify-content:space-around; 
+    /*width:100%;*/
+  }                            /* Fin css sommaire */
+
+.site-navigation{
+    text-decoration-line:none;
+}
+.Centre{
+      width:100%  
+}
+
+
+.Banniere_Image{                                /*  Banniere image hotel 1 */
+    height:200px; 
+    width:100%; 
+    /*border:1px rgb(226, 33, 49) solid; */
+    margin-bottom: 0px;
+    border-radius:10px 10px 1px 1px;
+    object-fit: cover;
+    
+}
+.Chapitre{
+    
+    /*    border:1px rgb(206, 137, 35) solid; */
+  flex-direction: column;
+  width: 200px;
+  height: 350px;
+  background-color: #d3adad;
+  background: url('../images/Acceuil/ciel_noir.webp');
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  padding: 10px;
+  color: deeppink;
+
+  box-shadow: 3px 3px 10px rgb(38, 9, 168);
+  &:hover{
+    background: linear-gradient(0deg, $colour_fond_boutton_prim  ,$colour_fond_boutton_second 35%, rgb(143, 46, 143) 100%);
+    background: url('../images/neige.png');
+    h3{
+        color:rgb(36, 26, 163);
+    }
+}
+    &:active{
+    
+        /*transform:scale(0.5);*/
+          @include Animation_chapitre ; 
+         /*opacity: 0;*/
+}
+     }  
+.footer_chapitre{
+  overflow: hidden;
+  width: 800px;
+  &:p{
+    font-size: 20px;
+    overflow: hidden;
+  }   
+}
+.footer_chapitre > :first-child {
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2em;                   /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defilement-rtl 15s infinite linear;
+  color:rgb(228, 4, 142);
+}
+
+.footer_chapitre1{
+  overflow: hidden;
+  width: 800px;
+  &:p{
+    font-size: 20px;
+    overflow: hidden;
+  }   
+}
+.footer_chapitre1 > :first-child {
+  display: inline-block;                /* modèle de boîte en ligne */
+  padding-right: 2em;                   /* un peu d'espace pour la transition */
+                  /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+     color:rgb(228, 4, 142);
+}
+
+ 

@@ -1,0 +1,29 @@
+@keyframes coeur_bat{
+   
+    from {
+      scale: 0.9;
+   }
+     
+   10%{
+    scale: 0.7;
+} 
+10%{
+    scale: 0.5;
+} 
+20%{
+    scale: 0.3;
+} 
+50%{
+    scale: 0.5;
+} 
+70%{
+    scale: 0.7;
+} 
+90%{
+    scale: 0.9;
+} 
+to  {
+    scale: 1;
+     
+}
+}

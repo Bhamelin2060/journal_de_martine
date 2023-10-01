@@ -1,0 +1,11 @@
+.footer_chapitre h1{
+   display:inline-block;
+    overflow: hidden;
+   /* width:800px;*/
+    text-align:left;
+    
+    animation-delay: 10s;
+    animation-name: defilement-rtl;
+    animation-duration: 52s;
+    animation-timing-function: linear;
+}

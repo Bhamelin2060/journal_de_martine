@@ -1,0 +1,166 @@
+ 
+.page
+{
+    
+    /*max-height:80%;
+    overflow: auto;*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin:10px;
+   /* padding:2%;*/
+    height:max-content;
+    background-image: url("/images/neige.png");
+    background-attachment: fixed; /* Le fond restera fixe */
+    & p  {
+    
+    text-align:justify;
+    align-items: flex-start;
+	  color: rgb(157, 35, 194);
+   /* font-size: 20px;*/
+	  font-family: VAGRounded;
+	  text-decoration:none;
+    margin-bottom: 0px ;
+    overflow: auto;
+     
+    & bold{
+        font-weight: bolder;
+    }
+    &.noire{
+      color:black;
+    }
+}
+& ul  {
+  font-size: 20px; /* Paragraphes de 14 pixels */
+  text-align: left;
+  width:65%;
+  align-items: flex-start;
+  color: rgb(157, 35, 194);
+  font-family: VAGRounded;
+  text-decoration:none;
+  margin-bottom: 0px ;
+  /*overflow: auto;
+  max-height:350px;*/
+  & bold{
+      font-weight: bolder;
+  }
+  &.large{
+    width:100%;
+    margin-left: 50px;
+  }
+  
+    & li.lire{
+      
+      font-size: 20px;
+      line-height: 2;
+      }
+     
+}
+h2{
+    text-align: left;
+    align-items: flex-start;
+}
+}
+.Titre_martine_gros {
+    font-family: VAGRounded_Bold;
+    color: deeppink;
+    font-size: 70px;
+  }
+  
+  .Titre_martine_petit {
+    font-family: VAGRounded_Bold;
+    color: deeppink;
+    font-size: 50px;
+  }
+#gauche {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & i{
+      font-size: 40px;
+      margin-left: 10px; 
+      width:50%;  
+      padding-right:  25px;
+      &:hover{
+        color: rgb(164, 207, 7);
+      }
+  }
+  &.transparent{
+    opacity: 0;
+}
+}
+#droite {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    & i{
+      font-size: 40px;
+      margin-right: 40px;
+      width:50%;  
+      &:hover{
+        color: rgb(164, 207, 7);
+      }
+    }
+    &.transparent{
+      opacity: 0;
+    }
+   
+  }  
+
+.mon_histoire {
+    text-align: left;
+    font-family: VagRounded;
+    background-image: url("/images/neige.png");
+    background-attachment: fixed; /* Le fond restera fixe */
+   /* max-height:70%;    ajjout dernier minute*/
+    
+   & h1 {
+    font-family: VagRounded;
+    font-size: 30px;
+  }
+  & h2 {
+    font-family: VagRounded;
+    font-size: 20px;
+  }
+  & p {
+    font-family: VAGRounded;
+    color: black;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    :hover {
+      color: rgb(161, 11, 36);
+      pointer-events: visible;
+      
+    }
+  }
+    
+ 
+  & h3 {
+    font-family: VagRounded;
+    font-size: 10px;
+  }/*# sourceMappingURL=main.css.map */
+}
+.Justifie{
+  
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+   
+}
+em
+{
+    font-style: italic;
+    COLOR:black;
+}
+.lien{
+  text-decoration: none;
+:hover {
+  color: rgb(206, 12, 28);
+  pointer-events: visible;
+
+}
+
+}
