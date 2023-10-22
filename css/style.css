@@ -3,6 +3,11 @@
 /* Délai du retart de l'animation spinner */
 /* durée du spinner */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  min-height: 100%; /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -119,7 +124,7 @@ p {
 }
 
 .banniere_image {
-  width: 90%;
+  width: 40%;
   margin-top: 20px;
   object-fit: cover;
 }
@@ -158,7 +163,7 @@ p {
 }
 
 .ascenseur {
-  height: 900px;
+  height: 100%;
   overflow: auto;
   text-align: justify;
 }
@@ -188,9 +193,10 @@ p {
 .colonne2 {
   display: flex;
   /*padding:15px;*/
-  margin-top: 20px;
+  margin: 20px;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .colonne2.inv {
   flex-wrap: wrap-reverse;
@@ -202,6 +208,7 @@ p {
   text-align: left;
   font-family: VagRounded;
   text-align: justify;
+  width: 50%;
 }
 .colonne2 p.up {
   margin-top: 150px;
@@ -296,6 +303,7 @@ p.lire.inter_ligne2 {
 
 .Bouton1 {
   background: linear-gradient(180deg, fuchsia, #9356DC 35%, #FF79DA 100%);
+  margin: 2%;
   height: 40px;
   width: 200px;
   text-align: center;
@@ -376,13 +384,52 @@ a.info:hover div {
 }
 
 .banniere_image2 {
-  width: 100%;
+  width: 40%;
   padding: 5px;
   box-shadow: 3px 3px 10px rgb(156, 6, 44);
   /*margin:15px;*/
 }
 .banniere_image2.arrondi2 {
-  border-radius: 52%;
+  border-radius: 12px;
+}
+.banniere_image2.up {
+  margin-bottom: 150px;
+}
+.banniere_image2.top {
+  margin-top: 150px;
+}
+.banniere_image2.contain {
+  object-fit: contain;
+}
+.banniere_image2.fill {
+  object-fit: fill;
+}
+.banniere_image2.bord_arrondi {
+  border-radius: 50%;
+}
+.banniere_image2.zoom {
+  scale: 0.6;
+}
+.banniere_image2.ombre1 {
+  box-shadow: 3px 3px 10px rgb(38, 9, 168);
+}
+.banniere_image2.ombre2 {
+  box-shadow: -1px 1px 16px 0px rgb(38, 9, 168);
+}
+.banniere_image2.marge {
+  margin: 20px;
+}
+.banniere_image2.small {
+  width: 40%;
+}
+.banniere_image2.Xsmall {
+  width: 20%;
+}
+.banniere_image2.centrée {
+  justify-items: center;
+}
+.banniere_image2.inv {
+  flex-wrap: wrap-reverse;
 }
 
 .lampe {
@@ -411,7 +458,6 @@ a.info:hover div {
 @media screen and (min-width: 769px) {
   body { /*desktop */
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
@@ -419,8 +465,8 @@ a.info:hover div {
     background-attachment: fixed;
     border: 2px green;
     width: 900px;
-    height: 1200px;
-    zoom: 80%;
+    /* height: 1200px;*/
+    height: 100%;
   }
   .gfg_tooltip .gfg_text {
     left: 10px;
@@ -431,8 +477,8 @@ a.info:hover div {
 }
 @media all and (min-width: 500) and (max-width: 768px) {
   body {
-    max-width: 750px;
     width: 100%;
+    height: 100-vw;
   }
   main {
     width: 50%;
@@ -463,12 +509,17 @@ a.info:hover div {
   }
   .colonne2 {
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .colonne2 p {
+    width: 100%;
   }
 }
 @media all and (max-width: 499px) {
   body {
     max-width: 380px;
     width: 100%;
+    height: 100-vw;
   }
   h1 {
     font-size: 15px;
@@ -516,8 +567,29 @@ a.info:hover div {
   }
   .colonne2 {
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .colonne2 p {
+    width: 100%;
+  }
+  .banniere_image2 {
+    width: 80%;
+    margin: auto;
+  }
+  .banniere_image {
+    width: 80%;
+    margin: auto;
+  }
+  .banniere_image {
+    width: 80%;
+    margin: auto;
+  }
+  .banniere_image.contain {
+    object-fit: contain;
   }
 }
+/* fin media 500px */
 .Les_3_sites {
   position: relative;
   width: 150%;
@@ -567,6 +639,13 @@ a.info:hover div {
   margin: 10%;
   margin-top: 60%;
   color: rgb(241, 222, 42);
+}
+
+#Boutons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* creation dun bulle au passage du pointerur*/
@@ -835,7 +914,7 @@ a.info:hover div {
   font-family: VagRounded;
   margin-left: 5%;
   align-items: center;
-  font-size: 30px;
+  /* font-size: $Font_size_h1_normal;*/
 }
 .Entete .gauche {
   display: flex;
@@ -1166,6 +1245,15 @@ em {
   pointer-events: visible;
 }
 
+@media all and (max-width: 768px) {
+  .page li.lire {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .page ul li.lire {
+    font-size: 10px;
+  }
+}
 .fond_historique {
   /*max-height:80%;
   overflow: auto;*/
@@ -1210,6 +1298,11 @@ em {
   box-shadow: 20px 10px 20px rgba(191, 192, 191, 0.8823529412);
   background: linear-gradient(10deg, #30df79 0%, #30df79 35%, #30df79 100%);
   background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
+}
+
+html {
+  min-height: 100%; /* make sure it is at least as tall as the viewport */
+  position: relative;
 }
 
 main {
@@ -1328,7 +1421,7 @@ p {
 }
 
 .banniere_image {
-  width: 90%;
+  width: 40%;
   margin-top: 20px;
   object-fit: cover;
 }
@@ -1367,7 +1460,7 @@ p {
 }
 
 .ascenseur {
-  height: 900px;
+  height: 100%;
   overflow: auto;
   text-align: justify;
 }
@@ -1397,9 +1490,10 @@ p {
 .colonne2 {
   display: flex;
   /*padding:15px;*/
-  margin-top: 20px;
+  margin: 20px;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .colonne2.inv {
   flex-wrap: wrap-reverse;
@@ -1411,6 +1505,7 @@ p {
   text-align: left;
   font-family: VagRounded;
   text-align: justify;
+  width: 50%;
 }
 .colonne2 p.up {
   margin-top: 150px;
@@ -1505,6 +1600,7 @@ p.lire.inter_ligne2 {
 
 .Bouton1 {
   background: linear-gradient(180deg, fuchsia, #9356DC 35%, #FF79DA 100%);
+  margin: 2%;
   height: 40px;
   width: 200px;
   text-align: center;
@@ -1585,13 +1681,52 @@ a.info:hover div {
 }
 
 .banniere_image2 {
-  width: 100%;
+  width: 40%;
   padding: 5px;
   box-shadow: 3px 3px 10px rgb(156, 6, 44);
   /*margin:15px;*/
 }
 .banniere_image2.arrondi2 {
-  border-radius: 52%;
+  border-radius: 12px;
+}
+.banniere_image2.up {
+  margin-bottom: 150px;
+}
+.banniere_image2.top {
+  margin-top: 150px;
+}
+.banniere_image2.contain {
+  object-fit: contain;
+}
+.banniere_image2.fill {
+  object-fit: fill;
+}
+.banniere_image2.bord_arrondi {
+  border-radius: 50%;
+}
+.banniere_image2.zoom {
+  scale: 0.6;
+}
+.banniere_image2.ombre1 {
+  box-shadow: 3px 3px 10px rgb(38, 9, 168);
+}
+.banniere_image2.ombre2 {
+  box-shadow: -1px 1px 16px 0px rgb(38, 9, 168);
+}
+.banniere_image2.marge {
+  margin: 20px;
+}
+.banniere_image2.small {
+  width: 40%;
+}
+.banniere_image2.Xsmall {
+  width: 20%;
+}
+.banniere_image2.centrée {
+  justify-items: center;
+}
+.banniere_image2.inv {
+  flex-wrap: wrap-reverse;
 }
 
 .lampe {
@@ -1620,7 +1755,6 @@ a.info:hover div {
 @media screen and (min-width: 769px) {
   body { /*desktop */
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
@@ -1628,8 +1762,8 @@ a.info:hover div {
     background-attachment: fixed;
     border: 2px green;
     width: 900px;
-    height: 1200px;
-    zoom: 80%;
+    /* height: 1200px;*/
+    height: 100%;
   }
   .gfg_tooltip .gfg_text {
     left: 10px;
@@ -1640,8 +1774,8 @@ a.info:hover div {
 }
 @media all and (min-width: 500) and (max-width: 768px) {
   body {
-    max-width: 750px;
     width: 100%;
+    height: 100-vw;
   }
   main {
     width: 50%;
@@ -1672,12 +1806,17 @@ a.info:hover div {
   }
   .colonne2 {
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .colonne2 p {
+    width: 100%;
   }
 }
 @media all and (max-width: 499px) {
   body {
     max-width: 380px;
     width: 100%;
+    height: 100-vw;
   }
   h1 {
     font-size: 15px;
@@ -1725,8 +1864,29 @@ a.info:hover div {
   }
   .colonne2 {
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .colonne2 p {
+    width: 100%;
+  }
+  .banniere_image2 {
+    width: 80%;
+    margin: auto;
+  }
+  .banniere_image {
+    width: 80%;
+    margin: auto;
+  }
+  .banniere_image {
+    width: 80%;
+    margin: auto;
+  }
+  .banniere_image.contain {
+    object-fit: contain;
   }
 }
+/* fin media 500px */
 .Les_3_sites {
   position: relative;
   width: 150%;
@@ -1776,6 +1936,13 @@ a.info:hover div {
   margin: 10%;
   margin-top: 60%;
   color: rgb(241, 222, 42);
+}
+
+#Boutons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes vibration {
@@ -1889,6 +2056,8 @@ a.info:hover div {
   position: relative;
   color: #f1f1f1;
   cursor: pointer;
+  width: 150px;
+  height: 150px;
   /* background: red; */
 }
 .box:hover {
@@ -1897,8 +2066,9 @@ a.info:hover div {
 
 .box img {
   position: absolute;
-  top: 14%;
+  top: 50%;
   left: 50%;
+  align-items: center;
   transform: translate(-50%, -50%);
   font-size: 25px;
   letter-spacing: 3px;
@@ -1939,7 +2109,7 @@ a.info:hover div {
   .circle {
     width: 150px;
     height: 150px;
-    padding-top: 210px;
+    /*  padding-top: 210px;*/
   }
   @keyframes boxMagic {
     from {
