@@ -436,6 +436,9 @@ a.info:hover div {
     object-fit: contain;
     align-items: center;
   }
+  .banniere_imageP.small {
+    width: 20%;
+  }
   .ligne {
     display: flex;
     flex-direction: column;
