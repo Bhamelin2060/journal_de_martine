@@ -396,12 +396,6 @@ a.info:hover div {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .colonne2.banniere_imageP {
-    width: 50%;
-    width: 50%;
-    margin-top: 20px;
-    object-fit: contain;
-  }
   .colonne2.switch {
     flex-direction: row-reverse;
   }
@@ -428,11 +422,19 @@ a.info:hover div {
     justify-content: space-around;
     contain: content;
   }
+  /* fin colonne2*/
   .gfg_tooltip .gfg_text {
     left: 10px;
   }
   .gfg_tooltip .gfg_text.bottom {
     top: -55px;
+  }
+  .banniere_imageP {
+    width: 50%;
+    width: 50%;
+    margin-top: 30px;
+    object-fit: contain;
+    align-items: center;
   }
   .ligne {
     display: flex;
@@ -1780,12 +1782,6 @@ a.info:hover div {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .colonne2.banniere_imageP {
-    width: 50%;
-    width: 50%;
-    margin-top: 20px;
-    object-fit: contain;
-  }
   .colonne2.switch {
     flex-direction: row-reverse;
   }
@@ -1812,11 +1808,19 @@ a.info:hover div {
     justify-content: space-around;
     contain: content;
   }
+  /* fin colonne2*/
   .gfg_tooltip .gfg_text {
     left: 10px;
   }
   .gfg_tooltip .gfg_text.bottom {
     top: -55px;
+  }
+  .banniere_imageP {
+    width: 50%;
+    width: 50%;
+    margin-top: 30px;
+    object-fit: contain;
+    align-items: center;
   }
   .ligne {
     display: flex;
@@ -2669,5 +2673,3 @@ option {
 
 /*# sourceMappingURL=style.css.map */
 
-
-/*# sourceMappingURL=style.css.map */
