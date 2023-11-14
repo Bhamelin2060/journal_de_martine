@@ -2693,5 +2693,34 @@ option {
     top: -200%;
   }
 }
+.mail {
+  font-size: 20px;
+  opacity: 0;
+  margin: 20px;
+  height: 20px;
+  scale: 0.2;
+}
+
+.plume {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: nowrap;
+}
+
+.bouton3 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 80px;
+  height: 100px;
+}
+.bouton3:hover + .mail {
+  transform: scale(5);
+  opacity: 1;
+  /*transform: translatex(20%);*/
+  transition: transform 2s ease-in;
+}
 
 /*# sourceMappingURL=style.css.map */
