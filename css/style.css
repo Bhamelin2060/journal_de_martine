@@ -151,6 +151,9 @@ p {
   flex-wrap: nowrap;
 }
 
+p.lire {
+  height: 100%;
+}
 p.lire.inter_ligne2 {
   line-height: 2em;
   font-size: 30px;
@@ -1563,6 +1566,9 @@ p {
   flex-wrap: nowrap;
 }
 
+p.lire {
+  height: 100%;
+}
 p.lire.inter_ligne2 {
   line-height: 2em;
   font-size: 30px;
@@ -2672,7 +2678,7 @@ option {
   height: 100%;
   /*background-color: rgba(255, 255, 255, 1.0);
   border-radius: 5%; */
-  overflow: hidden;
+  /*overflow: hidden;*/
   justify-content: center;
   align-items: center;
   /*  animation:apparence $Temps_animation_acceuil; */
@@ -2692,115 +2698,7 @@ option {
 @keyframes balayage {
   0% {
     opacity: 0.1;
-    top: 150;
-  }
-  10% {
-    opacity: 0.9;
-  }
-  70% {
-    opacity: 0.8;
-  }
-  90% {
-    opacity: 0.1;
-    top: -200%;
-  }
-}
-.mail {
-  font-size: 20px;
-  opacity: 0;
-  margin: 20px;
-  height: 20px;
-  scale: 0.2;
-}
-
-.plume {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-  flex-wrap: nowrap;
-}
-
-.bouton3 {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  width: 80px;
-  height: 100px;
-}
-.bouton3:hover + .mail {
-  transform: scale(5);
-  opacity: 1;
-  /*transform: translatex(20%);*/
-  transition: transform 2s ease-in;
-}
-
-/*# sourceMappingURL=style.css.map */
-
-
-.reg {
-  background-color: rgb(50, 109, 16);
-  color: white;
-}
-
-.close {
-  background-color: rgb(146, 18, 39);
-  color: white;
-}
-
-.mb-5 {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 15px;
-}
-
-/*.start{
-   background-color: rgb(191,201,201); 
-
-}*/
-#Parole {
-  position: absolue;
-  top: -20px;
-  left: -500px;
-  width: 200px;
-  display: none;
-  align-items: center;
-}
-
-#haut_parleur {
-  display: flex;
-  align-items: center;
-}
-
-.loading_script {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  top: 100%;
-  height: 100%;
-  /*background-color: rgba(255, 255, 255, 1.0);
-  border-radius: 5%; */
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  /*  animation:apparence $Temps_animation_acceuil; */
-  animation: balayage 150s;
-}
-
-@media all and (max-width: 499px) {
-  .loading_script {
-    animation: balayage 250s;
-  }
-}
-@media all and (min-width: 500) and (max-width: 768px) {
-  .loading_script {
-    animation: balayage 200s;
-  }
-}
-@keyframes balayage {
-  0% {
-    opacity: 0.1;
-    top: 150;
+    top: -60;
   }
   10% {
     opacity: 0.9;
