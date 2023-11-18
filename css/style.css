@@ -2509,14 +2509,14 @@ a.info:hover div {
   left: 10%;
   width: 80%;
   top: 150%;
-  height: 150%;
+  height: 100%;
   /*background-color: rgba(255, 255, 255, 1.0);
   border-radius: 5%; */
   justify-content: center;
   align-items: center;
   /*  animation:apparence $Temps_animation_acceuil; */
   animation-name: balayage;
-  animation-duration: 150s;
+  animation-duration: 200s;
 }
 
 @keyframes balayage {
@@ -2532,14 +2532,14 @@ a.info:hover div {
   }
   100% {
     opacity: 0;
-    top: -200%;
+    top: -150%;
   }
 }
 .loading_script_bilan_retraite {
   position: relative;
   left: 10%;
   width: 80%;
-  top: -75%;
+  top: -65%;
   height: 100%;
   opacity: 0;
   /*background-color: rgba(255, 255, 255, 1.0);
@@ -2549,7 +2549,7 @@ a.info:hover div {
   /*  animation:apparence $Temps_animation_acceuil; */
   animation-delay: 90s;
   animation-name: balayage_bilan_retraite;
-  animation-duration: 40s;
+  animation-duration: 300s;
 }
 
 @keyframes balayage_bilan_retraite {
@@ -2559,11 +2559,45 @@ a.info:hover div {
   20% {
     opacity: 1;
   }
-  95% {
+  65% {
     opacity: 0.5;
+  }
+  70% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
+  }
+}
+.loading_script_bilan {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  top: 150%;
+  height: 100%;
+  /*background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 5%; */
+  justify-content: center;
+  align-items: center;
+  /*  animation:apparence $Temps_animation_acceuil; */
+  animation-name: balayage;
+  animation-duration: 200s;
+}
+
+@keyframes balayage {
+  0% {
+    opacity: 1;
+    top: 100%;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    top: -150%;
   }
 }
 /* Import Google Font - Poppins */
