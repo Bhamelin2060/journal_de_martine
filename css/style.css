@@ -152,7 +152,7 @@ p {
 }
 
 p.lire {
-  height: 100%;
+  height: auto;
 }
 p.lire.inter_ligne2 {
   line-height: 2em;
