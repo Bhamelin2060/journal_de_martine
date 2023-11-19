@@ -27,7 +27,7 @@ let start = Date.now();
         
           document.getElementById("intro").innerText=Textalire;
           document.getElementById("intro").style="color: blue" ;
-          document.getElementById("intro").style.margin = "10px 10px 10px " + (250+(-timePassed+10000) / 4) + "px"  ;
+          document.getElementById("intro").style.margin = "10px 10px 10px " + (250+(-timePassed+10000) / 8) + "px"  ;
          
         }
        
@@ -40,7 +40,7 @@ let start = Date.now();
            document.getElementById("intro").style="color: deeplink" ;
            
         }
-      },20);
+      },5);
 
 
 
