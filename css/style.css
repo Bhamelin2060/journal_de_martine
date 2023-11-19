@@ -22,7 +22,6 @@ main {
   height: 100%;
   width: 100%;
   overflow: auto;
-  /*justify-content: space-around*/
 }
 
 .Couverture_int {
@@ -609,7 +608,7 @@ a.info:hover div {
   }
   p.lire.inter_ligne2 {
     line-height: 2em;
-    font-size: 20px;
+    font-size: 10px;
   }
   p.lire.larg50 {
     width: 100%;
@@ -1456,7 +1455,6 @@ main {
   height: 100%;
   width: 100%;
   overflow: auto;
-  /*justify-content: space-around*/
 }
 
 .Couverture_int {
@@ -2043,7 +2041,7 @@ a.info:hover div {
   }
   p.lire.inter_ligne2 {
     line-height: 2em;
-    font-size: 20px;
+    font-size: 10px;
   }
   p.lire.larg50 {
     width: 100%;
@@ -2741,7 +2739,7 @@ option {
   justify-content: center;
   align-items: center;
   /*  animation:apparence $Temps_animation_acceuil; */
-  animation: balayage 150s;
+  animation: balayage 200s;
 }
 
 @media all and (max-width: 499px) {
@@ -2751,13 +2749,13 @@ option {
 }
 @media all and (min-width: 500) and (max-width: 768px) {
   .loading_script {
-    animation: balayage 200s;
+    animation: balayage 250s;
   }
 }
 @keyframes balayage {
   0% {
     opacity: 0.1;
-    top: 20%;
+    top: 80%;
   }
   10% {
     opacity: 0.9;
@@ -2767,6 +2765,10 @@ option {
   }
   90% {
     opacity: 0.1;
+    top: -180%;
+  }
+  100% {
+    opacity: 0;
     top: -200%;
   }
 }
