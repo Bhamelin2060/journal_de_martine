@@ -60,6 +60,9 @@ main {
   border-radius: 25px;
   zoom: 1.1;
   box-shadow: 13px 13px 10px rgb(20, 15, 43);
+  animation: battement 2s; /* durée de l'animation 5 secondes  retard 100mx  */
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
 }
 
 h1 {
@@ -822,6 +825,19 @@ a.info:hover div {
   font-style: normal;
 }
 /* animtionbattement de coeur */
+@keyframes battement {
+  0% {
+    /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
+    transform: scale(1);
+  }
+  50% {
+    /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes defilement-rtl {
   0% {
     transform: translate3d(10%, 0, 0); /* position initiale à droite */
@@ -1478,6 +1494,9 @@ main {
   border-radius: 25px;
   zoom: 1.1;
   box-shadow: 13px 13px 10px rgb(20, 15, 43);
+  animation: battement 2s; /* durée de l'animation 5 secondes  retard 100mx  */
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
 }
 
 h1 {
