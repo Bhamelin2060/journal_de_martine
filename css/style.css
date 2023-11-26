@@ -627,7 +627,7 @@ a.info:hover div {
   .page ul {
     width: 100%;
   }
-  Li.lire {
+  li.lire {
     font-size: 15px;
   }
   .Bouton1 {
@@ -2072,8 +2072,8 @@ a.info:hover div {
   .page ul {
     width: 100%;
   }
-  Li.lire {
-    font-size: 12px;
+  li.lire {
+    font-size: 15px;
   }
   .Bouton1 {
     scale: 0.5;
@@ -2563,7 +2563,7 @@ a.info:hover div {
   align-items: center;
   /*  animation:apparence $Temps_animation_acceuil; */
   animation-name: balayage;
-  animation-duration: 200s;
+  animation-duration: 150s;
 }
 
 @keyframes balayage {
@@ -2579,14 +2579,14 @@ a.info:hover div {
   }
   100% {
     opacity: 0;
-    top: -150%;
+    top: -200%;
   }
 }
 .loading_script_bilan_retraite {
   position: relative;
   left: 10%;
   width: 80%;
-  top: -65%;
+  top: -95%;
   height: 100%;
   opacity: 0;
   /*background-color: rgba(255, 255, 255, 1.0);
@@ -2594,23 +2594,20 @@ a.info:hover div {
   justify-content: center;
   align-items: center;
   /*  animation:apparence $Temps_animation_acceuil; */
-  animation-delay: 90s;
+  animation-delay: 150s;
   animation-name: balayage_bilan_retraite;
-  animation-duration: 300s;
+  animation-duration: 200s;
 }
 
 @keyframes balayage_bilan_retraite {
   0% {
     opacity: 0.1;
   }
-  20% {
+  10% {
     opacity: 1;
   }
-  65% {
+  95% {
     opacity: 0.5;
-  }
-  70% {
-    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -2628,7 +2625,7 @@ a.info:hover div {
   align-items: center;
   /*  animation:apparence $Temps_animation_acceuil; */
   animation-name: balayage;
-  animation-duration: 200s;
+  animation-duration: 150s;
 }
 
 @keyframes balayage {
@@ -2639,8 +2636,8 @@ a.info:hover div {
   10% {
     opacity: 1;
   }
-  90% {
-    opacity: 0.1;
+  95% {
+    opacity: 0.2;
   }
   100% {
     opacity: 0;
