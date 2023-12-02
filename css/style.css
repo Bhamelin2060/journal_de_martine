@@ -2821,9 +2821,6 @@ option {
   flex-direction: column;
   width: 50%;
   flex-wrap: nowrap;
-  animation: plume 2s; /* durée de l'animation 5 secondes  retard 100mx  */
-  animation-timing-function: linear;
-  animation-iteration-count: 10;
 }
 
 .bouton3 {
@@ -2832,6 +2829,9 @@ option {
   border: 0;
   width: 80px;
   height: 100px;
+  animation: plume 2s; /* durée de l'animation 5 secondes  retard 100mx  */
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
 }
 .bouton3:hover + .mail {
   transform: scale(5);
