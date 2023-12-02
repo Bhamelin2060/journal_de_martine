@@ -1162,7 +1162,7 @@ a.info:hover div {
     scale: 80%;
   }
   .Chapitre {
-    height: 280px;
+    /*height: 280px;*/
   }
 }
 .site-navigation {
