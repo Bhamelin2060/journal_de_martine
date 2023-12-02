@@ -2564,6 +2564,7 @@ a.info:hover div {
   /*  animation:apparence $Temps_animation_acceuil; */
   animation-name: balayage;
   animation-duration: 150s;
+  /* ajout lancement animation bilan retraite */
 }
 
 @keyframes balayage {
@@ -2641,7 +2642,20 @@ a.info:hover div {
   }
   100% {
     opacity: 0;
-    top: -150%;
+    top: -300%;
+  }
+}
+@keyframes plume {
+  0% {
+    /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
+    transform: scale(1);
+  }
+  50% {
+    /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* Import Google Font - Poppins */
@@ -2807,6 +2821,9 @@ option {
   flex-direction: column;
   width: 50%;
   flex-wrap: nowrap;
+  animation: plume 2s; /* durée de l'animation 5 secondes  retard 100mx  */
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
 }
 
 .bouton3 {
