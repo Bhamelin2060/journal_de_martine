@@ -3,7 +3,7 @@
 var audio=document.createElement('audio');
  let Elt=document.getElementById("intro");
   
-let Textalire= "Chers amis, MARTINE A VERSAILLES n’est pas une nouvelle comptine de l’éroïne bien connue des enfants. A travers ce mémoire, je vous retrace les grandes lignes de ma carrière professionnelle en grande partie effectuée à Versailles. Ainsi pour pourrez voyager dans la petite histoire des hôpitaux du roi SOLEIL. Vous avez le choix de suivre mon parcours, pages après pages ou sélectionner les chapitres relatant mes diverses expériences. Grace à ce recueil web, vous trouverez les liens retraçant l’histoire des hôpitaux et des divers emplacements dans lesquels j’ai travaillé. Un petit Haut parleurvous permettra de profiter de la lecture à haute voix de mon récit. Je vous souhaite bonne lecture !";
+let Textalire= "Chers amis, MARTINE A VERSAILLES n’est pas une nouvelle comptine de l’Héroïne bien connue des enfants. A travers ce mémoire, je vous retrace les grandes lignes de ma carrière professionnelle en grande partie effectuée à Versailles. Ainsi pour pourrez voyager dans la petite histoire des hôpitaux du roi SOLEIL. Vous avez le choix de suivre mon parcours, pages après pages ou sélectionner les chapitres relatant mes diverses expériences. Grace à ce recueil web, vous trouverez les liens retraçant l’histoire des hôpitaux et des divers emplacements dans lesquels j’ai travaillé. Un petit Haut parleurvous permettra de profiter de la lecture à haute voix de mon récit. Je vous souhaite bonne lecture !";
  
  var first=true;
      window.addEventListener('mousedown',onmousedown);
